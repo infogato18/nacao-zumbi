@@ -1,32 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Nação Zumbi</title>
+    <title>Contato | Nação Zumbi</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+ 
 <body id="topo">
-        <header class="cabecalho">
-        <p class="linha-editorial">
-            PUBLICAÇÃO INDEPENDENTE
-            <span>RECIFE, PE • CULTURA SONORA</span>
-        </p>
-
+ 
+    <header class="cabecalho">
         <div class="identidade">
-            <h1>NAÇÃO<br>ZUMBI</h1>
-            <p class="chamada">O SOM NÃO<br>PEDE LICENÇA.</p>
+            <h1>Nação<br>Zumbi</h1>
+            <p class="chamada">De Recife, desde os anos 1990</p>
         </div>
     </header>
-
+ 
     <nav class="menu">
         <ul>
-            <li><a href="index.html">INÍCIO</a></li>
-            <li><a href="index.html#historia">A BANDA</a></li>
-            <li><a href="discografia.html">DISCOS</a></li>
-            <li><a href="galeria.html" >FOTOS</a></li>
-            <li><a href="contato.html" class="ativo">CONTATO</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#historia">A banda</a></li>
+            <li><a href="discografia.html">Discos</a></li>
+            <li><a href="galeria.html">Fotos</a></li>
+            <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
         </ul>
     </nav>
+ 
+    <main>
+        <section class="contato">
+            <h1>Entre em contato</h1>
+ 
+            <p class="texto-contato">
+                Tem alguma pergunta, proposta de show ou mensagem
+                para a banda? Preencha o formulário.
+            </p>
+ 
+            <form action="#" method="post">
+ 
+                <fieldset>
+                    <legend>Seus dados</legend>
+ 
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome"
+                           placeholder="Digite seu nome" required>
+ 
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="seuemail@exemplo.com" required>
+ 
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone"
+                           placeholder="(00) 00000-0000" required>
+ 
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade"
+                           placeholder="Sua cidade" required>
+                </fieldset>
+ 
+                <fieldset>
+                    <legend>Sobre o contato</legend>
+ 
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="show">Contratação de show</option>
+                        <option value="imprensa">Imprensa</option>
+                        <option value="outro">Outro</option>
+                    </select>
+ 
+                    <label for="data">Data do evento</label>
+                    <input type="date" id="data" name="data">
+ 
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"
+                              placeholder="Escreva sua mensagem..." required></textarea>
+                </fieldset>
+ 
+                <button type="submit">Enviar mensagem</button>
+ 
+            </form>
+        </section>
+    </main>
+ 
+    <footer class="rodape">
+        <p>Site sobre a Nação Zumbi.</p>
+        <p>Desenvolvido por Mayam Rabelo e Franciely Souza, 1º ano de Informática.</p>
+        <a href="#topo">Voltar ao topo</a>
+    </footer>
+ 
 </body>
 </html>
