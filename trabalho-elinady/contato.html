@@ -6,16 +6,16 @@
     <title>Contato | Nação Zumbi</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
- 
+
 <body id="topo">
- 
+
     <header class="cabecalho">
         <div class="identidade">
             <h1>Nação<br>Zumbi</h1>
             <p class="chamada">De Recife, desde os anos 1990</p>
         </div>
     </header>
- 
+
     <nav class="menu">
         <ul>
             <li><a href="index.html">Início</a></li>
@@ -25,68 +25,109 @@
             <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
         </ul>
     </nav>
- 
+
     <main>
         <section class="contato">
-            <h1>Entre em contato</h1>
- 
-            <p class="texto-contato">
-                Tem alguma pergunta, proposta de show ou mensagem
-                para a banda? Preencha o formulário.
-            </p>
- 
+            <h2>Entre em contato</h2>
+
+            <p class="texto-contato">Use o formulário para falar com a banda ou com o fã-clube.</p>
+
             <form action="#" method="post">
- 
+
                 <fieldset>
                     <legend>Seus dados</legend>
- 
+
                     <label for="nome">Nome completo</label>
                     <input type="text" id="nome" name="nome"
                            placeholder="Digite seu nome" required>
- 
+
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email"
                            placeholder="seuemail@exemplo.com" required>
- 
+
                     <label for="telefone">Telefone</label>
                     <input type="tel" id="telefone" name="telefone"
-                           placeholder="(00) 00000-0000" required>
- 
+                           placeholder="(00) 00000-0000">
+
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade"
-                           placeholder="Sua cidade" required>
-                </fieldset>
- 
-                <fieldset>
-                    <legend>Sobre o contato</legend>
- 
-                    <label for="assunto">Assunto</label>
-                    <select id="assunto" name="assunto" required>
-                        <option value="">Selecione uma opção</option>
-                        <option value="show">Contratação de show</option>
-                        <option value="imprensa">Imprensa</option>
-                        <option value="outro">Outro</option>
+                    <select id="cidade" name="cidade">
+                        <option value="">Selecione uma cidade</option>
+                        <option value="recife">Recife</option>
+                        <option value="olinda">Olinda</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="outra">Outra cidade</option>
                     </select>
- 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Assunto</legend>
+
+                    <div class="opcao">
+                        <input type="radio" id="assunto-show" name="assunto" value="show" required>
+                        <label for="assunto-show">Contratar show</label>
+                    </div>
+
+                    <div class="opcao">
+                        <input type="radio" id="assunto-fa" name="assunto" value="fa-clube" required>
+                        <label for="assunto-fa">Fã-clube</label>
+                    </div>
+
+                    <div class="opcao">
+                        <input type="radio" id="assunto-imprensa" name="assunto" value="imprensa" required>
+                        <label for="assunto-imprensa">Imprensa</label>
+                    </div>
+
+                    <div class="opcao">
+                        <input type="radio" id="assunto-outro" name="assunto" value="outro" required>
+                        <label for="assunto-outro">Outro</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua mensagem</legend>
+
                     <label for="data">Data do evento</label>
                     <input type="date" id="data" name="data">
- 
+
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="5"
                               placeholder="Escreva sua mensagem..." required></textarea>
+
+                    <div class="opcao">
+                        <input type="checkbox" id="novidades" name="novidades" value="sim">
+                        <label for="novidades">Quero receber novidades</label>
+                    </div>
                 </fieldset>
- 
-                <button type="submit">Enviar mensagem</button>
- 
+
+                <div class="botoes">
+                    <button type="submit">Enviar mensagem</button>
+                    <button type="reset">Limpar</button>
+                </div>
+
             </form>
         </section>
     </main>
- 
+
     <footer class="rodape">
         <p>Site sobre a Nação Zumbi.</p>
         <p>Desenvolvido por Mayam Rabelo e Franciely Souza, 1º ano de Informática.</p>
+
+        <div class="creditos">
+            <p><strong>Créditos das imagens</strong></p>
+            <ul>
+                <li>Galeria, foto 1: <a href="https://www.ba.gov.br/cultura/noticia/2024-02/62539/carnavaldacultura-nacao-zumbi-mistura-ritmos-no-largo-do-pelourinho" target="_blank" rel="noopener noreferrer">Secretaria da Cultura da Bahia</a></li>
+                <li>Galeria, foto 2: <a href="https://www.uol.com.br/splash/noticias/2024/05/26/nacao-zumbi-doce-maravilha.htm" target="_blank" rel="noopener noreferrer">UOL Splash</a></li>
+                <li>Galeria, foto 3: <a href="https://musica.uol.com.br/album/2014/11/08/nacao-zumbi-em-sao-paulo.htm" target="_blank" rel="noopener noreferrer">UOL Música</a></li>
+                <li>Galeria, foto 4: <a href="https://www.diariodepernambuco.com.br/viver/2025/07/7794558-minisserie-documental-resgata-trajetoria-iconica-da-nacao-zumbi.html" target="_blank" rel="noopener noreferrer">Diário de Pernambuco</a></li>
+                <li>Galeria, fotos 5 e 6: <a href="https://commons.wikimedia.org/wiki/Category:Nação_Zumbi" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></li>
+                <li>Capas dos discos: <a href="https://soundcloud.com/fmenezs/chico-science-e-nacao-zumbi-a-praieira-fmenezs-carnival-mix" target="_blank" rel="noopener noreferrer">SoundCloud</a>, <a href="https://discografia.discosdobrasil.com.br/musica/014" target="_blank" rel="noopener noreferrer">Discos do Brasil</a> e <a href="https://open.spotify.com/intl-pt/track/6z7iJc5EOq5bvMMJSyaPOy" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                <li>Vídeo: <a href="https://www.youtube.com/watch?v=3r-783qa8AA" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <!-- falta o crédito das imagens do index -->
+            </ul>
+        </div>
+
         <a href="#topo">Voltar ao topo</a>
     </footer>
- 
+
 </body>
 </html>
